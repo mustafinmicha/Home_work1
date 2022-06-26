@@ -8,12 +8,16 @@ Console.WriteLine("Введите третье число:");
 int number3 =Convert.ToInt32(Console.ReadLine());
 
 if(number1 > number2)
+{
+if(number1 > number3)
       {
-      if(number1 > number3)
-            {
-            Console.WriteLine("Максимальное число"+ number1);
-            }      
+      Console.WriteLine("Максимальное число"+ number1);
       }
+      else
+      {
+            Console.WriteLine("Максимальное число"+ number3);
+      }      
+}
       else
       {
       if(number2 > number3)
